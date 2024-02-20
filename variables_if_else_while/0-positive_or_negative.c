@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-positive_or_negative.c -o 0-positive_or_negative
+gcc -o positive_or_negative -Wall -Werror -Wextra -pedantic -std=gnu89 0-positive_or_negative.c
 /* betty style doc for function main goes there */
 int main(void)
 {
