@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
-
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-positive_or_negative.c -o 0-positive_or_negative
 /* betty style doc for function main goes there */
 int main(void)
 {
@@ -10,11 +10,12 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
+	printf("%d ", n);
 	if (n > 0)
 		printf("is positive\n");
-if (n < 0)
-printf("is negative\n");
-else
-printf("is zero\n");
+		if (n < 0)
+			printf("is negative\n");
+		else
+			printf("is zero\n");
 	return (0);
 }
