@@ -2,7 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
+/* main - print a negative of positive or zero
+ *
+ * Always - Return 0
+ *
+ */
 int main(void)
 {
 	int n;
@@ -13,6 +17,7 @@ int main(void)
 	printf("%d ", n);
 	if (n > 0)
 		printf("is positive\n");
+	else
 		if (n < 0)
 			printf("is negative\n");
 		else
