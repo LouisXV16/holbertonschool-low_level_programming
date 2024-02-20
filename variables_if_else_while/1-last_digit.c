@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - last digit of a number
+ * main - determine if the last digit of n is > 5, zero or < 6
  *
  * Return: Always 0
  */
@@ -19,6 +19,7 @@ int main(void)
 
 	printf("Last digit of %d is ", n);
 	printf("%d ", lastdigit);
+
 	if (lastdigit > 5)
 		printf("and is greater than 5\n");
 	else
