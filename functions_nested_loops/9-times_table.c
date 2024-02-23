@@ -15,6 +15,7 @@ void times_table(void)
 			table = (n1 * n2);
 			if (table <= 9)
 			{
+				_putchar(' ');
 				_putchar('0' + table);
 			}
 			else
