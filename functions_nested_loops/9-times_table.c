@@ -14,13 +14,19 @@ void times_table(void)
 		{
 			table = (n1 * n2);
 			if (table <= 9)
-			_putchar('0' + table);
-				else
+			{
+				_putchar('0' + table);
+			}
+			else
+			{
 				_putchar('0' + (table / 10));
 				_putchar('0' + (table % 10));
+			}
 			if (n2 < 9)
+			{
 			_putchar(',');
 			_putchar(' ');
+			}
 		}
 		_putchar(10);
 	}
