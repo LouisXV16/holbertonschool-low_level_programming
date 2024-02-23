@@ -2,7 +2,7 @@
 
 /**
  * _abs - compute the absolute value of an integrer
- *@n number to be checked
+ *@n: number to be checked
  * Return: -n if n<0, n else
  */
 
