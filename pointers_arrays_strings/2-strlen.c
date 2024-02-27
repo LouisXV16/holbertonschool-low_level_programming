@@ -1,16 +1,18 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _strlen -  returns the length of a string
- * @s: leng
- * Return: the length of a string
+ * _puts - prints the leng of  string
+ * @str: string
+ * Return: n
  */
 
 int _strlen(char *s)
 {
-	if (*s == '\0')
-		return (0);
+	int n;
 
-	return (1 + (_strlen(s + 1)));
+	for (n = 0; s[n] != '\0'; n++)
+	{
+
+	}
+	return (n);
 }
