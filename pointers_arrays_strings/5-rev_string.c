@@ -9,16 +9,18 @@
 
 void rev_string(char *s)
 {
-	int n, l;
+	int l, i, t;
 
-	for (n = 0; s[n] != '\0'; n++)
+	for (l = 0; s[l] != '\0'; l++)
 	{
-		putchar(s[n]);
 	}
 	putchar(10);
-	for (l = n - 1; l >= 0; l--)
+
+	for (i = l - 1; i >= l / 2; i--)
 	{
-		putchar(s[l]);
+		t = s[i];
+		s[i] = s[l - i - 1];
+		s[l - i - 1] = t;
 	}
 	putchar(10);
 }
