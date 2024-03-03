@@ -11,23 +11,23 @@ int _atoi(char *s)
 {
 	int total = 0;
 	int sign = 1;
-	int i;
+	int i = 0;
 
 	while (s[i] != '\0')
 	{
 		if (s[i] == ' ' || s[i] == '+')
 		{
-			i++;
+			s++;
 		}
 		else if (s[i] == '-')
 		{
 			sign = -1;
-			i++;
+			s++;
 		}
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
 			total = total * 10 + (s[i] - '0');
-			i++;
+			s++;
 		}
 		else
 		{
