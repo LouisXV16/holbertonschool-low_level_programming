@@ -20,6 +20,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*s == *p)
 				x++;
+				break;
 			p++;
 		}
 		if (*p == '\0')
