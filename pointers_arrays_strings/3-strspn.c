@@ -19,8 +19,10 @@ unsigned int _strspn(char *s, char *accept)
 		while (*p != '\0')
 		{
 			if (*s == *p)
+			{
 				x++;
 				break;
+			}
 			p++;
 		}
 		if (*p == '\0')
