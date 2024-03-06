@@ -20,6 +20,7 @@ int _prime(int n, int x)
 /**
 *is_prime_number - return if is a prime number
 *@n: number
+*Return: 0 or check
 */
 
 int is_prime_number(int n)
