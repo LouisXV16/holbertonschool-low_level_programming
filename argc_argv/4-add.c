@@ -10,29 +10,24 @@
 
 int main(int argc, char *argv[])
 {
-	int numi, i;
+	int i, j, sum = 0;
 
 	if (argc == 1)
+	{
 		printf("0\n");
 		return (0);
-
-	if (argc <= 2)
-	{
-		printf("%d\n", argv[1]);
-		return (0);
 	}
-	
-	i = 1;
-	numi = atoi(argv[i]);
-	
-	for (i = 1; i <= (argc - 1); i++)
-		if (i >= 0 && i <= 100000000)
-			numi += argv[i];
-		else
-			printf("Error\n");
 
-	printf("%d\n", numi);
-
+	for (i = 1;  i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				return (0);
+			}
+	}
+		sum += atoi(argv[i]);
+	printf("%d\n", sum);
 	return (0);
 }
-
