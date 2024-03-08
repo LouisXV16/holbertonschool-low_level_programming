@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-*main - print prod of number of arg
+*main - print add of number of arg
 *@argc: size of argv
 *@argv: array of program
 *Return: always 0
@@ -24,10 +24,10 @@ int main(int argc, char *argv[])
 			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
 				printf("Error\n");
-				return (0);
+				return (1);
 			}
-	}
 		sum += atoi(argv[i]);
+	}
 	printf("%d\n", sum);
 	return (0);
 }
