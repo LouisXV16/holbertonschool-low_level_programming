@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int numi;
+	int numi, i;
 
 	if (argc == 1)
 		printf("0\n");
@@ -18,13 +18,20 @@ int main(int argc, char *argv[])
 
 	if (argc <= 2)
 	{
-		printf("Error\n");
-		return (1);
+		printf("%d\n", argv[1]);
+		return (0);
 	}
-
+	
+	i = 1;
 	numi = atoi(argv[i]);
+	
+	for (i = 1; i <= (argc - 1); i++)
+		if (i >= 0 && i <= 100000000)
+			numi += argv[i];
+		else
+			printf("Error\n");
 
-	printf("%d\n", numi + );
+	printf("%d\n", numi);
 
 	return (0);
 }
