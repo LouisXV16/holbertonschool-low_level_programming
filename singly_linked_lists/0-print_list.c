@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-i * print_list - print the elements of the list
+ * print_list - print the elements of the list
  * @h: pointer of the head
  * Return: nbr of nodes
  */
