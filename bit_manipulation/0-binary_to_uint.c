@@ -3,8 +3,8 @@
 /**
 * binary_to_uint - converts a binary number to an unsigned int
 * @b: pointer to a string of 0 and 1 chars
-* Return: converted nbr or 
-* 0 if b = NULL 
+* Return: converted nbr or
+* 0 if b = NULL
 * & if there is another character in b
 */
 
